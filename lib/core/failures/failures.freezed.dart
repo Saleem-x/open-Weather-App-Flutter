@@ -81,25 +81,25 @@ class _$MainFailuresCopyWithImpl<$Res, $Val extends MainFailures>
 }
 
 /// @nodoc
-abstract class _$$ClientfailureCopyWith<$Res> {
-  factory _$$ClientfailureCopyWith(
-          _$Clientfailure value, $Res Function(_$Clientfailure) then) =
-      __$$ClientfailureCopyWithImpl<$Res>;
+abstract class _$$ClientfailureImplCopyWith<$Res> {
+  factory _$$ClientfailureImplCopyWith(
+          _$ClientfailureImpl value, $Res Function(_$ClientfailureImpl) then) =
+      __$$ClientfailureImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ClientfailureCopyWithImpl<$Res>
-    extends _$MainFailuresCopyWithImpl<$Res, _$Clientfailure>
-    implements _$$ClientfailureCopyWith<$Res> {
-  __$$ClientfailureCopyWithImpl(
-      _$Clientfailure _value, $Res Function(_$Clientfailure) _then)
+class __$$ClientfailureImplCopyWithImpl<$Res>
+    extends _$MainFailuresCopyWithImpl<$Res, _$ClientfailureImpl>
+    implements _$$ClientfailureImplCopyWith<$Res> {
+  __$$ClientfailureImplCopyWithImpl(
+      _$ClientfailureImpl _value, $Res Function(_$ClientfailureImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Clientfailure implements Clientfailure {
-  const _$Clientfailure();
+class _$ClientfailureImpl implements Clientfailure {
+  const _$ClientfailureImpl();
 
   @override
   String toString() {
@@ -109,7 +109,7 @@ class _$Clientfailure implements Clientfailure {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Clientfailure);
+        (other.runtimeType == runtimeType && other is _$ClientfailureImpl);
   }
 
   @override
@@ -185,29 +185,29 @@ class _$Clientfailure implements Clientfailure {
 }
 
 abstract class Clientfailure implements MainFailures {
-  const factory Clientfailure() = _$Clientfailure;
+  const factory Clientfailure() = _$ClientfailureImpl;
 }
 
 /// @nodoc
-abstract class _$$ServerfailureCopyWith<$Res> {
-  factory _$$ServerfailureCopyWith(
-          _$Serverfailure value, $Res Function(_$Serverfailure) then) =
-      __$$ServerfailureCopyWithImpl<$Res>;
+abstract class _$$ServerfailureImplCopyWith<$Res> {
+  factory _$$ServerfailureImplCopyWith(
+          _$ServerfailureImpl value, $Res Function(_$ServerfailureImpl) then) =
+      __$$ServerfailureImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ServerfailureCopyWithImpl<$Res>
-    extends _$MainFailuresCopyWithImpl<$Res, _$Serverfailure>
-    implements _$$ServerfailureCopyWith<$Res> {
-  __$$ServerfailureCopyWithImpl(
-      _$Serverfailure _value, $Res Function(_$Serverfailure) _then)
+class __$$ServerfailureImplCopyWithImpl<$Res>
+    extends _$MainFailuresCopyWithImpl<$Res, _$ServerfailureImpl>
+    implements _$$ServerfailureImplCopyWith<$Res> {
+  __$$ServerfailureImplCopyWithImpl(
+      _$ServerfailureImpl _value, $Res Function(_$ServerfailureImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Serverfailure implements Serverfailure {
-  const _$Serverfailure();
+class _$ServerfailureImpl implements Serverfailure {
+  const _$ServerfailureImpl();
 
   @override
   String toString() {
@@ -217,7 +217,7 @@ class _$Serverfailure implements Serverfailure {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Serverfailure);
+        (other.runtimeType == runtimeType && other is _$ServerfailureImpl);
   }
 
   @override
@@ -293,24 +293,24 @@ class _$Serverfailure implements Serverfailure {
 }
 
 abstract class Serverfailure implements MainFailures {
-  const factory Serverfailure() = _$Serverfailure;
+  const factory Serverfailure() = _$ServerfailureImpl;
 }
 
 /// @nodoc
-abstract class _$$NetworkerrorCopyWith<$Res> {
-  factory _$$NetworkerrorCopyWith(
-          _$Networkerror value, $Res Function(_$Networkerror) then) =
-      __$$NetworkerrorCopyWithImpl<$Res>;
+abstract class _$$NetworkerrorImplCopyWith<$Res> {
+  factory _$$NetworkerrorImplCopyWith(
+          _$NetworkerrorImpl value, $Res Function(_$NetworkerrorImpl) then) =
+      __$$NetworkerrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String error});
 }
 
 /// @nodoc
-class __$$NetworkerrorCopyWithImpl<$Res>
-    extends _$MainFailuresCopyWithImpl<$Res, _$Networkerror>
-    implements _$$NetworkerrorCopyWith<$Res> {
-  __$$NetworkerrorCopyWithImpl(
-      _$Networkerror _value, $Res Function(_$Networkerror) _then)
+class __$$NetworkerrorImplCopyWithImpl<$Res>
+    extends _$MainFailuresCopyWithImpl<$Res, _$NetworkerrorImpl>
+    implements _$$NetworkerrorImplCopyWith<$Res> {
+  __$$NetworkerrorImplCopyWithImpl(
+      _$NetworkerrorImpl _value, $Res Function(_$NetworkerrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -318,7 +318,7 @@ class __$$NetworkerrorCopyWithImpl<$Res>
   $Res call({
     Object? error = null,
   }) {
-    return _then(_$Networkerror(
+    return _then(_$NetworkerrorImpl(
       error: null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
@@ -329,8 +329,8 @@ class __$$NetworkerrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Networkerror implements Networkerror {
-  const _$Networkerror({required this.error});
+class _$NetworkerrorImpl implements Networkerror {
+  const _$NetworkerrorImpl({required this.error});
 
   @override
   final String error;
@@ -344,7 +344,7 @@ class _$Networkerror implements Networkerror {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$Networkerror &&
+            other is _$NetworkerrorImpl &&
             (identical(other.error, error) || other.error == error));
   }
 
@@ -354,8 +354,8 @@ class _$Networkerror implements Networkerror {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$NetworkerrorCopyWith<_$Networkerror> get copyWith =>
-      __$$NetworkerrorCopyWithImpl<_$Networkerror>(this, _$identity);
+  _$$NetworkerrorImplCopyWith<_$NetworkerrorImpl> get copyWith =>
+      __$$NetworkerrorImplCopyWithImpl<_$NetworkerrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -427,10 +427,11 @@ class _$Networkerror implements Networkerror {
 }
 
 abstract class Networkerror implements MainFailures {
-  const factory Networkerror({required final String error}) = _$Networkerror;
+  const factory Networkerror({required final String error}) =
+      _$NetworkerrorImpl;
 
   String get error;
   @JsonKey(ignore: true)
-  _$$NetworkerrorCopyWith<_$Networkerror> get copyWith =>
+  _$$NetworkerrorImplCopyWith<_$NetworkerrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
