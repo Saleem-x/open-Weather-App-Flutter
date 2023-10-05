@@ -22,5 +22,15 @@ class GetuserweatherBloc
       emit(getweather.fold((l) => const GetuserweatherState.failurestate(),
           (r) => Inittialweather(weather: r)));
     });
+    on<SearchCityEvent>((event, emit) async {
+      Either<MainFailures, WeatherModel> searchweather =
+          await weatherrepo.searchcity(event.city);
+      emit(
+        searchweather.fold(
+          (l) => const GetuserweatherState.searchnotfoundState(),
+          (r) => Searchfoundstate(weather: r),
+        ),
+      );
+    });
   }
 }

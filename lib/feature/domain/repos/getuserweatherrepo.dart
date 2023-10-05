@@ -42,4 +42,22 @@ class GetUserWeatherrepo implements IGetUserLocationRepo {
       return left(const MainFailures.serverfailure());
     }
   }
+
+  @override
+  Future<Either<MainFailures, WeatherModel>> searchcity(String city) async {
+    try {
+      final response =
+          await http.get(Uri.parse('${domain}q=$city&appid=$apikey'));
+
+      if (response.statusCode == 200) {
+        var data = response.body;
+        var decodedata = json.decode(data);
+        return right(WeatherModel.fromJson(decodedata));
+      } else {
+        return left(const MainFailures.clientfailure());
+      }
+    } catch (e) {
+      return left(const MainFailures.serverfailure());
+    }
+  }
 }

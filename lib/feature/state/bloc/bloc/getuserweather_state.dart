@@ -7,6 +7,10 @@ class GetuserweatherState with _$GetuserweatherState {
 
   const factory GetuserweatherState.failurestate() = Failurestate;
 
+  const factory GetuserweatherState.searchfoundstate(
+      {required WeatherModel? weather}) = Searchfoundstate;
+  const factory GetuserweatherState.searchnotfoundState() = SearchnotfoundState;
+
   factory GetuserweatherState.initial() =>
       const GetuserweatherState.inittialweather(weather: null);
 }

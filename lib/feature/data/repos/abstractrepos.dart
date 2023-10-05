@@ -5,6 +5,7 @@ import 'package:weather/feature/data/models/weather_model/weather_model.dart';
 
 abstract class IGetUserLocationRepo {
   Future<Either<MainFailures, WeatherModel>> getuserweather();
+  Future<Either<MainFailures, WeatherModel>> searchcity(String city);
 }
 
 abstract class IGetWeatherIcon {
